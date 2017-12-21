@@ -25,4 +25,5 @@ module.exports = {
         extensions: ['.js','.es6']
     }
 
+    }
 }

@@ -75,7 +75,11 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
+<<<<<<< HEAD
 console.log('logging from utils.js file..');
+=======
+console.log('logging from utils.js file..')
+>>>>>>> 8999b8c203cc9b3a082ece8fea9767b7533672fa
 
 /***/ }),
 /* 2 */
@@ -89,6 +93,7 @@ console.log('App Loaded');
 
 /***/ }),
 /* 3 */
+<<<<<<< HEAD
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101,6 +106,11 @@ var login = function login(username, password) {
 };
 
 login('admin', 'idunno');
+=======
+/***/ (function(module, exports) {
+
+console.log('login loaded');
+>>>>>>> 8999b8c203cc9b3a082ece8fea9767b7533672fa
 
 /***/ })
 /******/ ]);
