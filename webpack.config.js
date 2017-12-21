@@ -7,31 +7,22 @@ module.exports = {
         filename:"bundle.js"
     },
     module:{
-        preLoaders:[
+        rules:[
             {
                 test: /\.js$/,
-                exclude:'node_modules',
-                loader:'jshint-loader'
-
-            }
-        ],
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude:'node_modules',
-                loader:'jshint-loader'
-
+                use:'jshint-loader',
+                enforce:'pre',
+                exclude:/node_modules/
             },
             {
                 test: /\.es6$/,
-                exclude: /node_modules/,
-                loader: "babel-loader"
+                use: "babel-loader",
+                exclude:/node_modeules/
             }
         ]
     },
-
     resolve:{
-        extensions: ['','.js','.es6']
+        extensions: ['.js','.es6']
     }
 
 }
